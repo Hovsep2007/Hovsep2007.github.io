@@ -13,12 +13,7 @@
 
 //jquery
 $(document).ready(function(){
-    $('nav ul li a').click(function(){
-        if($('nav ul li a').hasClass('active')){
-            $('nav ul li a').removeClass('active')
-            $(this).addClass('active')
-        }
-    })
+
     
     
     
@@ -54,7 +49,7 @@ $(document).ready(function(){
             $('.number3').text(Math.ceil(this.counter))
         }
     })
-
+    $('nav').show();
     $('.img-back').hide()
     $($('.div-img')).on("click" ,'.overlay' ,function(){
         var imageUrl = $(this).siblings('img').attr('src')
@@ -66,7 +61,4 @@ $(document).ready(function(){
         $('.img-back').fadeOut(200)
         $('nav').show();
     })
-
-  
-
 });

@@ -70,7 +70,6 @@ body{
             }
         }
     }
-    main{
         .section1{
                 @include bg-image;
                 height: auto;
@@ -344,5 +343,4 @@ body{
                 }
             }
         }
-    }
 }
