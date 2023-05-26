@@ -13,7 +13,9 @@
 
 //jquery
 $(document).ready(function(){
-
+    
+    $('.loader').hide();
+   
     
     
     
@@ -56,9 +58,14 @@ $(document).ready(function(){
         $('.img-back img').attr('src', imageUrl)
         $('nav').hide()
         $('.img-back').fadeIn(200)
+        $('.img-back').removeClass('activee')
     })
     $('.img-back span').click(function(){
         $('.img-back').fadeOut(200)
         $('nav').show();
+    })
+    $(document).unload(function(){
+        $('.loader').show();
+        
     })
 });
